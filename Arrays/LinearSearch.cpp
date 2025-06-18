@@ -15,10 +15,10 @@ bool linearSearch(int arr[], int size, int key) {
 int main() {
     int arr[] = {5, 3, 9, 1, 6};
     int size = 5;
-    int key = 9;
+    int key = 2;
 
     if(linearSearch(arr, size, key)) {
-        cout << "Element found!" << endl;
+        cout << "Element found!" << key << endl;
     } else {
         cout << "Element not found!" << endl;
     }
@@ -30,32 +30,32 @@ int main() {
 
 
 
-// Linear Search in C++
+// // Linear Search in C++
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int linearSearch(int arr[], int size, int key) {
-    for(int i = 0; i < size; i++) {
-        if(arr[i] == key) {
-            return i;  // Found, return index
-        }
-    }
-    return -1;  // Not Found
-}
+// int linearSearch(int arr[], int size, int key) {
+//     for(int i = 0; i < size; i++) {
+//         if(arr[i] == key) {
+//             return i;  // Found, return index
+//         }
+//     }
+//     return -1;  // Not Found
+// }
 
-int main() {
-    int arr[] = {7, 2, 8, 4, 1};
-    int size = 5;
-    int key = 4;
+// int main() {
+//     int arr[] = {7, 2, 8, 4, 1};
+//     int size = 5;
+//     int key = 4;
 
-    int index = linearSearch(arr, size, key);
+//     int index = linearSearch(arr, size, key);
 
-    if(index != -1) {
-        cout << "Element found at index: " << index << endl;
-    } else {
-        cout << "Element not found!" << endl;
-    }
+//     if(index != -1) {
+//         cout << "Element found at index: " << index << endl;
+//     } else {
+//         cout << "Element not found!" << endl;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
