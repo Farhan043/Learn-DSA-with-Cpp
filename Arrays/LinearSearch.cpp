@@ -1,5 +1,5 @@
 
-// Linear Search in C++
+// This code implements a linear search algorithm in C++. It searches for a target value in a sorted array of integers.
 #include <iostream>
 using namespace std;
 
@@ -30,32 +30,32 @@ int main() {
 
 
 
-// // Linear Search in C++
+// That's code for linear search in C++. It checks if a key exists in an array and returns its index if found, or -1 if not found.
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int linearSearch(int arr[], int size, int key) {
-//     for(int i = 0; i < size; i++) {
-//         if(arr[i] == key) {
-//             return i;  // Found, return index
-//         }
-//     }
-//     return -1;  // Not Found
-// }
+int linearSearch(int arr[], int size, int key) {
+    for(int i = 0; i < size; i++) {
+        if(arr[i] == key) {
+            return i;  // Found, return index
+        }
+    }
+    return -1;  // Not Found
+}
 
-// int main() {
-//     int arr[] = {7, 2, 8, 4, 1};
-//     int size = 5;
-//     int key = 4;
+int main() {
+    int arr[] = {7, 2, 8, 4, 1};
+    int size = 5;
+    int key = 4;
 
-//     int index = linearSearch(arr, size, key);
+    int index = linearSearch(arr, size, key);
 
-//     if(index != -1) {
-//         cout << "Element found at index: " << index << endl;
-//     } else {
-//         cout << "Element not found!" << endl;
-//     }
+    if(index != -1) {
+        cout << "Element found at index: " << index << endl;
+    } else {
+        cout << "Element not found!" << endl;
+    }
 
-//     return 0;
-// }
+    return 0;
+}
